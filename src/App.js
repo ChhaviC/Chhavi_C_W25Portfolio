@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion"; // For animations
 import { FaSun, FaMoon } from "react-icons/fa"; // Dark mode icons
+import { TypeAnimation } from "react-type-animation"; // Typing effect
 import "./index.css"; // Importing CSS styles
 
 const fadeIn = {
@@ -36,12 +37,20 @@ const App = () => {
           Welcome to Chhavi's Portfolio
         </motion.h1>
         <motion.p initial="hidden" animate="visible" variants={fadeIn}>
-          Software Developer | Tech Enthusiast | Problem Solver
+          <TypeAnimation
+            sequence={[
+              "Software Developer", 2000,
+              "Tech Enthusiast", 2000,
+              "Problem Solver", 2000,
+            ]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+          />
         </motion.p>
       </header>
 
       <main className="main-content">
-       
 
         {/* Bio Section */}
         <motion.section className="bio" initial="hidden" animate="visible" variants={fadeIn}>
@@ -49,6 +58,22 @@ const App = () => {
           <p>
             I am a Computer Programming student with a strong passion for web and mobile application development.
             My goal is to innovate and contribute to cutting-edge technologies. I specialize in React, JavaScript, Node.js, Python, and SQL.
+          </p>
+
+          <h3>💡 Philosophy & Career Goal</h3>
+          <blockquote>
+            “We are the facilitators of our own creative evolution.” – Bill Hicks
+          </blockquote>
+          <p>
+            As a software developer, I believe in the power of continuous learning, adaptability, and creativity.
+            My journey started with a curiosity about how technology shapes the world, and it has grown into a deep commitment
+            to building solutions that enhance user experiences, streamline workflows, and solve real challenges.
+          </p>
+          <p>
+            I see myself as more than just a developer—I am a problem solver, innovator, and lifelong learner.
+            My goal is to leverage my technical skills and critical thinking to contribute to forward-thinking projects
+            that push boundaries in technology. With every challenge I take on, I aim to evolve, adapt, and innovate—
+            ultimately making a positive difference in the tech industry.
           </p>
         </motion.section>
 
@@ -73,25 +98,6 @@ const App = () => {
             <strong>Craft Connect</strong> is an innovative online marketplace designed to empower artisans and small business owners 
             by giving them a seamless platform to showcase and sell their handcrafted products. 
           </p>
-
-          <h3>✨ Key Features</h3>
-          <ul>
-            <li> <strong>Secure Authentication:</strong> Firebase-based login/signup</li>
-            <li><strong>Product Listings:</strong> Sellers can manage inventory & showcase products</li>
-            <li> <strong>Payments:</strong> Secure transactions via Stripe API</li>
-            <li><strong>Order Tracking:</strong> Customers can track shipments</li>
-            <li><strong>Seller Dashboard:</strong> Sales & analytics tracking</li>
-            <li><strong>Fully Responsive:</strong> Optimized for all devices</li>
-          </ul>
-
-          <h3>🛠️ Tech Stack</h3>
-          <ul>
-            <li><strong>Frontend:</strong> React.js, Tailwind CSS</li>
-            <li><strong>Backend:</strong> Node.js, Express.js</li>
-            <li><strong>Database:</strong> Firebase Firestore</li>
-            <li><strong>Authentication:</strong> Firebase Auth</li>
-            <li>💰 <strong>Payments:</strong> Stripe API</li>
-          </ul>
 
           <h3>🔗 Project Links</h3>
           <p><strong>📂 GitHub Repository:</strong> <a href="https://github.com/dorpanz/Craft_connect_project.git" target="_blank">View Code</a></p>
@@ -124,13 +130,35 @@ const App = () => {
                 🎥 Watch Demo
               </a>
             </li>
+            <li>
+              <strong>📱 React Native Mobile App</strong> 
+              <br />
+              <a href="https://www.youtube.com/watch?v=YourReactNativeAppLink" target="_blank" rel="noopener noreferrer">
+                🎥 Watch Demo
+              </a>
+            </li>
+            <li>
+              <strong>➗ Fun Math Game</strong> 
+              <br />
+              <a href="https://www.youtube.com/watch?v=YourFunMathGameLink" target="_blank" rel="noopener noreferrer">
+                🎥 Watch Demo
+              </a>
+            </li>
           </ul>
+        </motion.section>
 
-          <h3>🎗️ Community Service</h3>
-          <p>Volunteer Mentor at Code for Change Initiative</p>
-
-          <h3>🏆 Awards & Recognition</h3>
-          <p>Best Software Developer Award 2024</p>
+        <motion.section className="contact" initial="hidden" animate="visible" variants={fadeIn}>
+          <h2>📬 Contact Me</h2>
+          <ul>
+            <li>Email: <a href="mailto:chhavichhabra5@gmail.com">chhavichhabra5@gmail.com</a></li>
+            <li>Phone: <a href="tel:+16478953246">+1 647 895 3246</a></li>
+            <li>
+              LinkedIn: 
+              <a href="https://www.linkedin.com/in/chhavi-chhabra-263a57242" target="_blank" rel="noopener noreferrer">
+                linkedin.com/in/chhavi-chhabra
+              </a>
+            </li>
+          </ul>
         </motion.section>
 
       </main>
