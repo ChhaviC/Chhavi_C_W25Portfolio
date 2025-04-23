@@ -91,17 +91,80 @@ const App = () => {
         {/* Capstone Project - Craft Connect */}
         <motion.section className="capstone-project" initial="hidden" animate="visible" variants={fadeIn}>
           <h2>🚀 Capstone Project: Craft Connect</h2>
-          <p><strong>Project Type:</strong> E-Commerce Website</p>
 
-          <h3>Overview</h3>
+          <h3>📌 Project Summary</h3>
           <p>
-            <strong>Craft Connect</strong> is an innovative online marketplace designed to empower artisans and small business owners 
-            by giving them a seamless platform to showcase and sell their handcrafted products. 
+            Craft Connect is an e-commerce platform that empowers artisans and small businesses
+            by providing a digital marketplace to showcase and sell their handcrafted products.
+            The platform offers a seamless shopping experience, secure transactions, and real-time
+            communication between sellers and buyers.
+          </p>
+
+          <h3>🎯 Project Vision</h3>
+          <p>
+            The goal of Craft Connect is to create a user-friendly, scalable marketplace that
+            supports small businesses in reaching a global audience. The project focuses on
+            integrating modern web technologies for fast, secure, and intuitive interactions.
+          </p>
+
+          <h3>📜 Project/Business Requirements</h3>
+          <p>
+            The platform includes secure authentication using Firebase, a product listing feature
+            where sellers can upload and manage their inventory, a shopping cart with checkout functionality,
+            Stripe API integration for secure payments, and an order tracking system to monitor purchases.
+            Users can also leave reviews and ratings for products.
+          </p>
+
+          <h3>📅 Project Plan</h3>
+          <p>
+            The project was developed using Agile methodology, following iterative sprints for feature
+            development and testing. The development lifecycle includes an initial phase for UI/UX wireframes,
+            followed by backend setup, frontend implementation, integration of authentication and payment systems,
+            and final testing before deployment.
+          </p>
+
+          <h3>📐 Requirements Analysis & Design</h3>
+          <p>
+            The system was structured with modular components to ensure scalability and security.
+            The backend architecture follows a RESTful API design using Node.js and Express.js.
+            Data is managed using Firebase Firestore, with real-time synchronization between clients.
+          </p>
+
+          <h3>🎨 Wireframes & Mockups</h3>
+          <p>
+            The UI was designed in Figma, focusing on a clean and intuitive user experience.
+            The main pages include a home page featuring trending products, a product detail page with
+            item specifications, a shopping cart and checkout process, and a seller dashboard for managing
+            product listings and sales reports.
+          </p>
+
+          <h3>📊 Status Reports</h3>
+          <p>
+            Project progress was tracked using JIRA, where tasks were assigned and updated weekly.
+            Sprint retrospectives were conducted to analyze challenges and implement improvements.
+            Status reports documented milestones, pending tasks, and potential risks.
+          </p>
+
+          <h3>⚙️ System Implementation</h3>
+          <p>
+            The frontend was built using React.js with Tailwind CSS for styling, while the backend is powered
+            by Node.js and Express.js. Firebase Firestore manages data storage, Firebase Authentication ensures
+            user security, and Stripe API handles payment processing. The system is deployed on Vercel and Firebase Hosting.
           </p>
 
           <h3>🔗 Project Links</h3>
-          <p><strong>📂 GitHub Repository:</strong> <a href="https://github.com/dorpanz/Craft_connect_project.git" target="_blank">View Code</a></p>
-          <p><strong>🌐 Live Demo:</strong> <a href="https://www.youtube.com/watch?v=UnOJr5eaC0c" target="_blank">Visit Craft Connect</a></p>
+          <p>
+            <strong>📂 GitHub Repository:</strong>  
+            <a href="https://github.com/dorpanz/Craft_connect_project.git" target="_blank" rel="noopener noreferrer">
+              View Code
+            </a>
+          </p>
+          <p>
+            <strong>🌐 Live Demo:</strong>  
+            <a href="https://www.youtube.com/watch?v=UnOJr5eaC0c" target="_blank" rel="noopener noreferrer">
+              Visit Craft Connect
+            </a>
+          </p>
         </motion.section>
 
         {/* Professional Summary */}
@@ -167,6 +230,7 @@ const App = () => {
         <motion.p initial="hidden" animate="visible" variants={fadeIn}>
           &copy; 2025 Chhavi. All Rights Reserved.
         </motion.p>
+
       </footer>
     </div>
   );
